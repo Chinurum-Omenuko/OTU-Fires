@@ -5,6 +5,23 @@
     </p>
 </div>
 
+
 <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body
+    {
+        box-sizing: border-box;
+        
+    }
+    .container
+    {
+        height: 100vh;
+        border: solid 2px red;
+        width: 99vw;
+    }
 </style>
 
