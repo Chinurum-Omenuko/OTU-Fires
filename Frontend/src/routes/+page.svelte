@@ -1,8 +1,20 @@
+<script>
+// @ts-nocheck
+/** @type {import('./$types').PageData} */
+    import Article from '../components/articles/article.svelte';
+    export let data;
+    export let news = data.news;
+</script>
+
+
 <div class="container">
     <h1>News</h1>
-    <p>News feed will go in here.
-        Created using an RSS Feed on local fires.
-    </p>
+    {#each news as article}
+    <div class="headline">
+        <h1>{article.title}</h1>
+        <img src={article.image_url} alt="">
+    </div>
+    {/each}
 </div>
 
 
